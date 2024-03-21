@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import MangaManager from './MangaManager';
 
 function Main() {
@@ -20,6 +20,7 @@ function Main() {
           <div key={index} className="bg-white p-6 rounded-lg shadow-md">
             <h2 className="text-xl font-semibold mb-4">{manga.mangaTitle}</h2> 
             <h3 className="text-sm font-semibold mb-2">Author: {manga.authorName}</h3> 
+            <p className="text-sm mb-4">Rating: {manga.rating}</p>
             <div className="w-full h-64 overflow-hidden rounded-lg shadow-md">
               <img src={manga.coverSource} alt={manga.mangaTitle} className="w-full h-full object-cover" />
             </div>
